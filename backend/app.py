@@ -81,7 +81,7 @@ def claim_points():
                     })
 
             # Update Points and Last Claimed
-            new_points = user['points'] + 10
+            new_points = user['points'] + 69
             cur.execute("""
                 UPDATE users SET points = ?, last_claimed = ? WHERE wallet_address = ?
             """, (new_points, datetime.now().strftime('%Y-%m-%d %H:%M:%S'), wallet))
